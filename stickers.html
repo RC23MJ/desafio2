@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stickers.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">
+            <img src="https://cdn-icons-png.flaticon.com/512/7603/7603461.png" alt="">
+            <input id="sticker1" type="text" placeholder="Ingrese cantidad">
+        </div>
+        <div class="item">
+            <img src="https://cdn-icons-png.flaticon.com/512/7603/7603365.png" alt="">
+            <input id="sticker2" type="text" placeholder="Ingrese cantidad">
+        </div>
+        <div class="item">
+            <img src="https://cdn-icons-png.flaticon.com/512/7603/7603443.png" alt="">
+            <input id="sticker3" type="text" placeholder="Ingrese cantidad">
+        </div>
+    </div>
+
+    <p id="suma"></p>
+
+    <button onclick="
+
+        let sticker1 = document.querySelector('#sticker1').value;
+        let sticker2 = document.querySelector('#sticker2').value;
+        let sticker3 = document.querySelector('#sticker3').value;
+
+        sticker1 = Number(sticker1);
+        sticker2 = Number(sticker2);
+        sticker3 = Number(sticker3);
+
+        let suma = (sticker1 + sticker2 + sticker3);
+
+        let total = document.querySelector('#suma');
+
+        if (suma <= 10) {
+            total.innerHTML = 'Llevas ' + suma + ' stickers';
+        } else {
+            total.innerHTML = 'Llevas demasiados stickers';
+        }
+
+    ">Verificar</button>
+
+</body>
+</html>
+
+

@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Cada imagen con su input */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustes para las imágenes */
+.item img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+/* Ajustes para los inputs */
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #e2a30b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Estilo del párrafo */
+#suma {
+    margin-top: 20px;
+    font-size: 18px;
+}
